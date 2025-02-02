@@ -1,1 +1,1 @@
-# rnn-projet-finetuning-model
+# projet_NN2025_title_movie_generator
