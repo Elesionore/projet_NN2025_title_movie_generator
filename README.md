@@ -10,3 +10,5 @@ Ce projet a été réalisé par :
 - **KOROL Solomia** : [Github](https://github.com/Elesionore)
 
 ## Objectifs
+
+Nous allons créer un générateur de titres de films sur la base des résumés des films.
