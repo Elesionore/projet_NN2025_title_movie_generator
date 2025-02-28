@@ -1,4 +1,5 @@
-# TIGER
+<img src="./assets/img/tiger.png" alt="Logo du projet" width="200"/>
+
 
 Ce projet de groupe a été effectué dans le cadre du cours Réseau de neurones et Interfaces pour le web enseigné par M. Loïc Grobol au sein du master TAL (Université Paris Nanterre).
 
