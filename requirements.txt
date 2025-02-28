@@ -3,3 +3,6 @@ tf-keras
 evaluate
 datasets
 sentencepiece
+uvicorn
+fastapi
+python-multipart
