@@ -16,44 +16,49 @@ L'objectif de ce projet est de créer un générateur de titres de films basé s
 
 ## Structure du dépôt 
 
-├── assets/
-|  ├── css/
-|  ├── style.css
-├── html/
-|  ├── index.html
-├── img/
-|  ├── header-image.png
-|  ├── logo.jpeg
-|  ├── patricia.PNG
-|  ├── solomiia.png
-|  ├── lise.png
-|  ├── tiger.png
-├── js/
-|  ├── script.js
-├── result/
-|  ├── movie_data.csv : contient nos données d'entraînement
-├── script/
-|  ├── fine_tuned_model.py : script de fine-tuning du modèle T5-small
-|  ├── prepared_data.py : script pour la création de movie_data.csv
-|  ├── run_model.py : script d'exemple d'utilisation du modèle TIGER
-├── README.md
-├── main.py : permet de lancer l'interface web TIGER
-├── requirements.txt : librairies nécessaires pour lancer main.py
-  
+```
+📂 .git
+├── 📂 assets/
+|  ├── 📂 css/
+|  |  ├── 🎨 style.css
+|  ├── 📂 html/
+|  |  ├── 🌐 index.html
+|  ├── 📂 img/
+|  |  ├── 🖼️ header-image.png
+|  |  ├── 🖼️ logo.jpeg
+|  |  ├── 🖼️ patricia.PNG
+|  |  ├── 🖼️ solomiia.png
+|  |  ├── 🖼️ lise.png
+|  |  ├── 🖼️ tiger.png
+|  ├── 📂 js/
+|  |  ├── 📄 script.js
+├── 📂 result/
+|  ├── 📄 movie_data.csv : contient nos données d'entraînement
+├── 📂 script/
+|  ├── 📄 fine_tuned_model.py : script de fine-tuning du modèle T5-small
+|  ├── 📄 prepared_data.py : script pour la création de movie_data.csv
+|  ├── 📄 run_model.py : script d'exemple d'utilisation du modèle TIGER
+├── 📄 README.md
+├── 📄 main.py : permet de lancer l'interface web TIGER
+├── 📄 requirements.txt : librairies nécessaires pour lancer main.py
+```
+
 ## Mise en place
 
 Afin que tout fonctionne correctement, si vous partez de ce déppôt git, vous devriez créer le modèle fine-tuné de génération de titres de films en lançant le script `script/fine_tuned_model.py`. Attention : l'entraînement peut prendre jusqu'à trois jours. Pensez à lancer les étapes 1 à 3 de la section _Utilisation_ pour que le programme tourne bien.
 
 Voici la structure du dossier contenant le modèle TIGER après entraînement : 
 
-├── model/
-|  ├── added_tokens.json
-|  ├── config.json
-|  ├── generation_config.json
-|  ├── model.safetensors
-|  ├── special_tokens_maps.json
-|  ├── spiece.model
-|  ├── tokenizer_config.json
+```
+├── 📂 model/
+|  ├── 📄 added_tokens.json
+|  ├── 📄 config.json
+|  ├── 📄 generation_config.json
+|  ├── 📄 model.safetensors
+|  ├── 📄 special_tokens_maps.json
+|  ├── 📄 spiece.model
+|  ├── 📄 tokenizer_config.json
+```
 
 ## Utilisation
 
