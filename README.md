@@ -14,6 +14,47 @@ Ce projet a été réalisé par :
 
 L'objectif de ce projet est de créer un générateur de titres de films basé sur les résumés de films.
 
+## Structure du dépôt 
+
+├── assets/
+|  ├── css/
+|  ├── style.css
+├── html/
+|  ├── index.html
+├── img/
+|  ├── header-image.png
+|  ├── logo.jpeg
+|  ├── patricia.PNG
+|  ├── solomiia.png
+|  ├── lise.png
+|  ├── tiger.png
+├── js/
+|  ├── script.js
+├── result/
+|  ├── movie_data.csv : contient nos données d'entraînement
+├── script/
+|  ├── fine_tuned_model.py : script de fine-tuning du modèle T5-small
+|  ├── prepared_data.py : script pour la création de movie_data.csv
+|  ├── run_model.py : script d'exemple d'utilisation du modèle TIGER
+├── README.md
+├── main.py : permet de lancer l'interface web TIGER
+├── requirements.txt : librairies nécessaires pour lancer main.py
+  
+## Mise en place
+
+Afin que tout fonctionne correctement, si vous partez de ce déppôt git, vous devriez créer le modèle fine-tuné de génération de titres de films en lançant le script `script/fine_tuned_model.py`. Attention : l'entraînement peut prendre jusqu'à trois jours. Pensez à lancer les étapes 1 à 3 de la section _Utilisation_ pour que le programme tourne bien.
+
+Voici la structure du dossier contenant le modèle TIGER après entraînement : 
+
+├── model/
+|  ├── added_tokens.json
+|  ├── config.json
+|  ├── generation_config.json
+|  ├── model.safetensors
+|  ├── special_tokens_maps.json
+|  ├── spiece.model
+|  ├── tokenizer_config.json
+
 ## Utilisation
 
 1. Créer un environnement virtuel : 
@@ -29,8 +70,7 @@ source venv/bin/activate
 ``` 
 pip install -r requirements.txt
 ```
-
-1. Lancer notre application :
+4. Lancer notre application :
 ```
 uvicorn main:app
 ```
@@ -49,3 +89,7 @@ Voici un exemple de commande pour démarrer le serveur :
 ```
 uvicorn main:app --reload
 ```
+
+## Nota-bene : 
+
+Le dossier contenant le modèle (_model/_) et celui contenant le corpus que nous avons utilisés ([CMU Movie Summary Corpus](https://www.cs.cmu.edu/~ark/personas/)) ne sont pas présents sur ce dépôt.
