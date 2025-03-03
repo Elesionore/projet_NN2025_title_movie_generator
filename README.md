@@ -17,7 +17,7 @@ L'objectif de ce projet est de créer un générateur de titres de films basé s
 ## Structure du dépôt 
 
 ```
-📂 .git
+📂 .NN2025_movie_TItle_GEneratoR
 ├── 📂 assets/
 |  ├── 📂 css/
 |  |  ├── 🎨 style.css
@@ -45,7 +45,7 @@ L'objectif de ce projet est de créer un générateur de titres de films basé s
 
 ## Mise en place
 
-Afin que tout fonctionne correctement, si vous partez de ce déppôt git, vous devriez créer le modèle fine-tuné de génération de titres de films en lançant le script `script/fine_tuned_model.py`. Attention : l'entraînement peut prendre jusqu'à trois jours. Pensez à lancer les étapes 1 à 3 de la section _Utilisation_ pour que le programme tourne bien.
+Afin que tout fonctionne correctement, si vous partez de ce dépôt git, vous devriez créer le modèle fine-tuné de génération de titres de films en lançant le script `script/fine_tuned_model.py`. Attention : l'entraînement peut prendre jusqu'à trois jours. Pensez à lancer les étapes 1 à 3 de la section _Utilisation_ pour que le programme tourne bien.
 
 Voici la structure du dossier contenant le modèle TIGER après entraînement : 
 
